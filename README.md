@@ -16,7 +16,7 @@ Then just run `make build`
 
 ## Running
 
-`make run` will run Godoogle; future plans to have a script to add this to your path via appending/prepending to your zshrc/bashrc
+`./godoogle.sh` will run Godoogle; future plans to have a script to add this to your path via appending/prepending to your zshrc/bashrc
 
 ## Usage
 

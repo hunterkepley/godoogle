@@ -5,22 +5,22 @@
 (generate_opam_files true)
 
 (source
- (github username/reponame))
+ (github hunterkepley/godoogle))
 
-(authors "Author Name <author@example.com>")
+(authors "hunter kepley <kepley.l.hunter@gmail.com>")
 
-(maintainers "Maintainer Name <maintainer@example.com>")
+(maintainers "hunter kepley <kepley.l.hunter@gmail.com>")
 
 (license LICENSE)
 
-(documentation https://url/to/documentation)
+(documentation https://github.com/hunterkepley/godoogle)
 
 (package
  (name godoogle)
- (synopsis "A short synopsis")
- (description "A longer description")
+ (synopsis "Godot doc search")
+ (description "Find info on Godot quickly with this CLI tool")
  (depends ocaml)
  (tags
-  ("add topics" "to describe" your project)))
+  ("cli" "godot" "documentation")))
 
 ; See the complete stanza docs at https://dune.readthedocs.io/en/stable/reference/dune-project/index.html
