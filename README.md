@@ -20,7 +20,9 @@ Then just run `make build`
 
 ## Usage
 
-...
+`./godoogle.sh --help` - Help
+
+`./godoogle.sh --query URL` - Queries 'URL'
 
 ---
 

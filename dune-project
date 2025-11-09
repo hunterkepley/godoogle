@@ -19,7 +19,7 @@
  (name godoogle)
  (synopsis "Godot doc search")
  (description "Find info on Godot quickly with this CLI tool")
- (depends ocaml)
+ (depends ocaml lambdasoup curl)
  (tags
   ("cli" "godot" "documentation")))
 
