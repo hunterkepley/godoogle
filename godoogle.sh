@@ -1,3 +1,3 @@
 #!/bin/bash
 
-dune exec godoogle
+./_build/default/bin/main.exe $*

@@ -12,6 +12,8 @@ bug-reports: "https://github.com/hunterkepley/godoogle/issues"
 depends: [
   "dune" {>= "3.20"}
   "ocaml"
+  "lambdasoup"
+  "curl"
   "odoc" {with-doc}
 ]
 build: [
