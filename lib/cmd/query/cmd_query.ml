@@ -13,7 +13,7 @@ module Runner = struct
       Buffer.contents write_buff
     with _ ->
       raise (Failure ("Failed to download from " ^ uri))
-
   let run url to_file () =
-    if to_file then Helpers.print_err ("Error processing curl request to " ^ url) else print_string (string_of_uri url)
-end
+    let html = string_of_uri url in
+    if to_file then Files.write_to_file "index.html" html () else print_string html
+  end
