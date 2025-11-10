@@ -2,7 +2,7 @@
 open Curl
 
 module Runner = struct
-  let string_of_uri uri () =
+  let string_of_uri uri =
     try
       let connection = init () in
       let write_buff = Buffer.create 0 in
@@ -14,6 +14,6 @@ module Runner = struct
     with _ ->
       raise (Failure ("Failed to download from " ^ uri))
 
-  let run s () =
-    string_of_uri s ()
+  let run url to_file () =
+    if to_file then Helpers.print_err ("Error processing curl request to " ^ url) else print_string (string_of_uri url)
 end
