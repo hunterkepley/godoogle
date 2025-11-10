@@ -1,5 +1,7 @@
-(* Help command; No args *)
-let info_flag = ref false
+let help_flag = ref false
 
-(* Query command *)
-let file_flag = ref false
+(* Query command flags *)
+let query_file_flag = ref false
+
+(* Search command flags *)
+let search_base_node_flag = ref ""
