@@ -1,5 +1,7 @@
 # GODOOGLE (Godot Google)
 
+#### This project uses NO generative AI whatsoever. It is a project intended to teach myself OCaml by creating something useful
+
 ## What is GODOOGLE?
 
 > Godoogle is an easy to use CLI search tool for Godot documentation which removes the toil of dealing with polymorphic object documentation nesting
@@ -20,11 +22,15 @@ Then just run `make build`
 
 ## Usage
 
-`./godoogle.sh --help` - Help
+`./godoogle.sh info` - Help command (`help` is an alias. This CLI does not have a `--help`)
 
-`./godoogle.sh info` - Info command
+`./godoogle.sh query <URL>` - Queries `<URL>`, useful for downloading HTML files locally. Not specifically for Godot.
+ Eventually may improve this command by adding searching+parsing+combining of documents, and containing it's domain to Godot.
+ For now it works for what it does
 
-`./godoogle.sh query URL` - Queries 'URL'
+`./godoogle.sh search <TERM>` - Smartly searches godot docs using specific parameters/filters. Flags such as `--base-node`
+ will influence the search to traverse up and down document trees where a child has multiple parents that may contain the
+ information desired
 
 ---
 

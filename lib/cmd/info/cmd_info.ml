@@ -1,7 +1,8 @@
 module Runner = struct
   let run =
-    "info        --> Displays information about Godoogle\n"^
+    "info          --> Displays information about Godoogle. 'help' is an alias for this command\n"^
     
-    "query <URL> --> Queries a given url, in the future will be used for advanced queries, "^
-    "for now just pulls a webpage"
+    "query <URL>   --> Pulls a webpage, given the URL\n"^
+
+    "search <TERM> --> Searches a specific topic, such as 'global_position'"
 end
