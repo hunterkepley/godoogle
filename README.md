@@ -22,7 +22,9 @@ Then just run `make build`
 
 `./godoogle.sh --help` - Help
 
-`./godoogle.sh --query URL` - Queries 'URL'
+`./godoogle.sh info` - Info command
+
+`./godoogle.sh query URL` - Queries 'URL'
 
 ---
 

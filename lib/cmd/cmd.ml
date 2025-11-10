@@ -1,9 +1,9 @@
 (* Help command; No args *)
-let help_flag = ref false
-let help () =
-  print_string (Cmd_help.Runner.run ())
+let info_flag = ref false
+let info () =
+  print_string (Cmd_info.Runner.run ())
 
 (* Query command *)
-let query_flag = ref ""
-let query () =
-  print_string (Cmd_query.Runner.run !query_flag () )
+let file_flag = ref false
+let query query_url () =
+  Cmd_query.Runner.run query_url !file_flag ()
